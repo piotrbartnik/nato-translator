@@ -1,6 +1,7 @@
 let synth = window.speechSynthesis;
 let inputForm = document.querySelector('form');
 let inputTxt = document.querySelector('.txt');
+let textToNato = document.querySelector('#ttn');
 let voices = [];
 
 function populateVoiceList() {
@@ -36,3 +37,9 @@ inputForm.onsubmit = function (event) {
   event.preventDefault();
   speak();
 }
+
+textToNato.addEventListener('click', () => {
+  console.log('dupa')
+  let textToTranslate = inputTxt.value;
+  inputTxt.value = nato(textToTranslate);
+})
