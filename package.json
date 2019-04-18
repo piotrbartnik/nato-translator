@@ -1,0 +1,11 @@
+{
+  "name": "nato-phonetic-translator",
+  "version": "1.0.0",
+  "description": "NATO phonteic decoder with voice synth",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Piotr Bartnik",
+  "license": "MIT"
+}
